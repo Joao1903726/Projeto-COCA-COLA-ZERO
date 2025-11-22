@@ -1,0 +1,155 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    align-items: center;
+    font-size: 15px;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    /* <-- Isso remove a rolagem lateral */
+    overflow-y: auto;
+    /* mantém só a rolagem vertical */
+}
+
+header {
+    background-color: black;
+    position: relative;
+    /* Agora não fica mais fixa */
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logotipo img {
+    background-color: black;
+    width: 42px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+}
+
+.logotipo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.nav-links {
+    background-color: black;
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    background-color: black;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+.nav-links a:hover {
+    color: #ff0004;
+}
+
+main.container {
+  display: flex;
+  justify-content: center; /* centraliza horizontalmente */
+  align-items: center;     /* centraliza verticalmente */
+  min-height: 100vh;       /* ocupa toda a altura da tela */
+  padding: 20px;
+}
+
+main .card {
+  background-color: #ffffff;
+  color: rgb(226, 0, 0);
+  padding: 30px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 0 10px #242424;
+}
+
+
+h1 {
+    margin-top: 0;
+    font-size: 1.4rem;
+}
+
+.lead {
+    text-align: center;
+    color: #050505;
+    margin-bottom: 20px;
+}
+
+.field {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 6px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    resize: vertical;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    background: #2563eb;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #1e4fcc;
+}
+
+.status {
+    margin-top: 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: green;
+    text-align: center;
+    /* << CENTRALIZA O TEXTO */
+}
