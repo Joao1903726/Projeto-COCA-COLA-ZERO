@@ -1,0 +1,179 @@
+* {
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  align-items: center;
+  font-size: 15px;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  /* <-- Isso remove a rolagem lateral */
+  overflow-y: auto;
+  /* mantém só a rolagem vertical */
+}
+
+header {
+  background-color: black;
+  position: relative;
+  /* Agora não fica mais fixa */
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 10px 20px;
+  z-index: 1000;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.navbar {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logotipo img {
+  background-color: black;
+  width: 42px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+}
+
+.logotipo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.nav-links {
+  background-color: black;
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-links a {
+  background-color: black;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+.nav-links a:hover {
+  color: #ff0004;
+}
+
+.title {
+  text-align: center;
+color: #000000;
+}
+
+.title span {
+  color: red;
+}
+
+.feedback-form {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-form h2 {
+  color: #c00;
+  margin-bottom: 10px;
+}
+
+.feedback-form p {
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.question-nome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.question-nome label {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Campo de texto estilizado */
+.question-nome input[type="text"] {
+  width: 300px;
+  height: 50px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #d3d3d3, #f0f0f0);
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.1);
+  font-size: 16px;
+  color: #333;
+  outline: none;
+  transition: box-shadow 0.3s ease;
+}
+
+.question-nome input[type="text"]:focus {
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+}
+
+.question {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.question label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.options {
+  display: flex;
+  gap: 20px;                 /* espaçamento entre Sim e Não */
+  justify-content: center;   /* centraliza horizontalmente */
+}
+
+.options input[type="radio"] {
+  margin-right: 5px;
+}
+
+button[type="submit"] {
+  background-color: #c00;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #a00;
+}

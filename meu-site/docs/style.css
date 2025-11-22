@@ -1,0 +1,302 @@
+/* Cores Usadas 
+#070605 preto
+#75020f vermelho-claro
+#C7080C vermelho-clarinho
+#51080d vermelho-escurinho
+#2b0307 vermelho-escuro
+
+*/
+
+* {
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #111;
+  font-size: 15px;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  /* <-- Isso remove a rolagem lateral */
+  overflow-y: auto;
+  /* mantém só a rolagem vertical */
+}
+
+
+header {
+  position: relative;
+  /* Agora não fica mais fixa */
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 10px 20px;
+  z-index: 1000;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logotipo img {
+  width: 42px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+}
+
+.logotipo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  font-size: 1.2rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: #ffff;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+.nav-links a:hover {
+  color: #ff0004;
+}
+
+.conteudo {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.conteudo {
+  margin-bottom: 4rem;
+  width: 100%;
+  height: 100vh;
+  background-image: url('../Img/coca2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.conteudo-description h1 {
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  z-index: 2;
+}
+
+.conteudo-description span {
+  color: #ff0004;
+}
+
+.conteudo::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #00000080;
+  /* escurece a imagem para destacar o texto */
+  z-index: 1;
+}
+
+.conteudo-description {
+  position: relative;
+  z-index: 2;
+}
+
+.sobre-section {
+  width: 100%;
+  background-color: #111;
+  display: flex;
+  justify-content: center;
+  padding: 80px 0;
+}
+
+.sobre-container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  max-width: 1100px;
+  padding: 20px;
+}
+
+.sobre-img {
+  width: 400px;
+  height: auto;
+  border-radius: 70px;
+}
+
+.description {
+  color: white;
+  max-width: 500px;
+}
+
+.description h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.description h2 {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+
+.inicial span {
+  color: red;
+}
+
+    .conteudo-inicial {
+      margin: 28px; 
+      color: #ffffff;
+      font-family: "Poppins", sans-serif;
+      line-height: 1.6;
+    }
+
+    .subtopico {
+      display: block;
+      position: relative;
+      padding-left: 1.2em;
+      margin-top: 0.5em;
+    }
+
+    .subtopico::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: #ffffff;
+      font-weight: bold;
+    }
+
+.inicial {
+  margin: 28px; 
+  color: #fff;
+  text-align: justify;
+}
+
+.card {
+display: flex; 
+justify-content: justify; 
+gap: 40px; 
+text-align: center; 
+border: none;
+
+}
+
+.card-title, .card-text {
+  color: #ffff;
+}
+
+.card-img-top {
+  border-radius: 18%;
+}
+
+.embalagem-section {
+  width: 100%;
+  background-color: #111;
+  display: flex;
+  justify-content: center;
+  padding: 80px 0;
+}
+
+.embalagem-container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  max-width: 1100px;
+  padding: 20px;
+}
+
+.embalagem-img {
+  width: 400px;
+  height: auto;
+  border-radius: 70px;
+}
+
+
+.preço-section {
+  width: 100%;
+  background-color: #111;
+  display: flex;
+  justify-content: center;
+  padding: 80px 0;
+}
+
+.preço-container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  max-width: 1100px;
+  padding: 20px;
+}
+
+.preço-img {
+  width: 400px;
+  height: auto;
+  border-radius: 70px;
+}
+
+    footer {
+      padding: 30px 0;
+      text-align: center;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .social-icons a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 45px;
+      height: 45px;
+      background: #fff;
+      border-radius: 50%;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .social-icons a svg {
+      width: 22px;
+      height: 22px;
+    }
+
+    .social-icons a:hover {
+      transform: scale(1.1);
+      background-color: red;
+      box-shadow: 0 0 8px rgba(252, 14, 14, 0.3);
+    }
